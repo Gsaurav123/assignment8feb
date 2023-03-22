@@ -1,0 +1,85 @@
+#Q1, Create a vehicle class with an init method having instance variables as name_of_vehicle, max_speed 
+#and average_of_vehicle. 
+ans = class vehicle:
+    
+    def __init__(self, name_of_vehicle , max_speed , average_of_vcehicle):
+        self.name_of_vehicle  = name_of_vehicle
+        self.max_speed =        max_speed
+        self.average_of_vehicle=9
+        
+a = vehicle("ferrari" ,400 , 11)  
+
+a.name_of_vehicle
+
+'ferrari'
+        
+        
+#Q2.  Create a child class car from the vehicle class created in Que 1, which will inherit the vehicle class. 
+#Create a method named seating_capacity which takes capacity as an argument and returns the name of 
+#the vehicle and its seating capacity.
+
+ans = 
+class vehicle:
+    
+    def __init__(self, name_of_vehicle , max_speed , average_of_vcehicle):
+        self.name_of_vehicle  = name_of_vehicle
+        self.max_speed =        max_speed
+        self.average_of_vehicle=9
+        
+class car(vehicle):
+    
+    def car1(self, seating_capacity):
+        return "the name car is ferrari"
+        
+            
+
+#Q3. What is multiple inheritance? Write a python code to demonstrate multiple inheritance.
+
+ans = when a child class inherits from the more then one class .i.e., this child class derived from multiple classes, we can cxall it multiple inheritance.
+
+class tst1:
+    
+    def test(self):
+        return "this is a 1st base class"
+class tst2:
+    
+    def test1(self):
+        return "this is 2nd base clsss"  
+
+class tst3(tst1 , tst2):
+    pass    
+    
+
+#Q4. What are getter and setter in python? Create a class and create a getter and a setter method in this 
+#class.
+ans = Getter: A method that allows you to access an attribute in a given class. Setter: A method that allows you to set or mutate the value of an attribute in a class.
+ 
+class btech:
+    
+    def __init__(self, no_of_electrical_student):
+        self.__no_of_electrical_student = no_of_electrical_student
+        
+    def set_value(self , no_of_electrical_student):
+        self.__no_of_electrical_student = no_of_electrical_student
+        
+        
+    def get_value(self):
+        return self.__no_of_electrical_student
+        
+        
+
+#Q5.What is method overriding in python? Write a python code to demonstrate method overriding
+ans = when you have two different method of same name and also each method perform different task.
+class parent:
+    
+    def show(self):
+        print('this is parent class')
+        
+class parent1:
+    def show1(self):
+        print("this is parent1 class")
+class child(parent , parent1):
+    
+    def child1(self):
+        print('this is child class')
+        
